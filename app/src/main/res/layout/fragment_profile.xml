@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ProfileFragment">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/hisobim"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        app:cardElevation="@dimen/_10sdp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Hisobim"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/mtrl_lolo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_220sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        app:cardElevation="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@+id/hisobim">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/mtrl_img"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_65sdp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp">
+
+                <ImageView
+                    android:id="@+id/profile_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/opoy"
+                    android:scaleType="centerCrop"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/profile_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/mtrl_img"
+                app:layout_constraintTop_toTopOf="@id/mtrl_img"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="Baby"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:textSize="@dimen/_16sdp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/phone_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@id/profile_name"
+                app:layout_constraintTop_toBottomOf="@id/profile_name"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="+998911225827"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/black"/>
+
+
+            <ImageView
+                android:id="@+id/location_icon"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/ic_baseline_location_on_24"
+                app:layout_constraintTop_toBottomOf="@id/mtrl_img"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?selectableItemBackground"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="@dimen/_20sdp"
+                app:tint="@color/green" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/location_icon"
+                app:layout_constraintBottom_toBottomOf="@id/location_icon"
+                app:layout_constraintStart_toEndOf="@id/location_icon"
+                android:text="Mening manzilim"
+                android:textSize="@dimen/_15sdp"
+                android:background="?selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:id="@+id/map_icon"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/ic_baseline_map_24"
+                app:layout_constraintTop_toBottomOf="@id/location_icon"
+                android:layout_marginTop="@dimen/_15sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:background="?selectableItemBackground"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:clickable="true"
+                android:focusable="true"
+                app:tint="@color/green" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/map_icon"
+                app:layout_constraintBottom_toBottomOf="@id/map_icon"
+                app:layout_constraintStart_toEndOf="@id/map_icon"
+                android:background="?selectableItemBackground"
+                android:text="Mening haritam"
+                android:clickable="true"
+                android:focusable="true"
+                android:textSize="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:id="@+id/notify_icon"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/ic_baseline_notifications_24"
+                app:layout_constraintTop_toBottomOf="@id/map_icon"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?selectableItemBackground"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="@dimen/_20sdp"
+                app:tint="@color/green" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/notify_icon"
+                app:layout_constraintBottom_toBottomOf="@id/notify_icon"
+                app:layout_constraintStart_toEndOf="@id/notify_icon"
+                android:text="Bildirishnomalar"
+                android:textSize="@dimen/_15sdp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?selectableItemBackground"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:textColor="@color/black"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/mtrl_pepe"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_165sdp"
+        app:layout_constraintTop_toBottomOf="@id/mtrl_lolo"
+        app:cardElevation="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_15sdp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/history_icon"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/ic_baseline_history_24"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="@dimen/_20sdp"
+                app:tint="@color/green" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/history_icon"
+                app:layout_constraintBottom_toBottomOf="@id/history_icon"
+                app:layout_constraintStart_toEndOf="@id/history_icon"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="Mening buyurtmalarim"
+                android:textSize="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:id="@+id/favorite_icon"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/ic_baseline_favorite_border_24"
+                app:layout_constraintTop_toBottomOf="@id/history_icon"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="@dimen/_20sdp"
+                app:tint="@color/green" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/favorite_icon"
+                app:layout_constraintBottom_toBottomOf="@id/favorite_icon"
+                app:layout_constraintStart_toEndOf="@id/favorite_icon"
+                android:text="Tanlanganlar"
+                android:clickable="true"
+                android:focusable="true"
+                android:textSize="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:id="@+id/settings_icon"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/ic_baseline_settings_24"
+                app:layout_constraintTop_toBottomOf="@id/favorite_icon"
+                android:layout_marginTop="@dimen/_15sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginStart="@dimen/_20sdp"
+                app:tint="@color/green" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/settings_icon"
+                app:layout_constraintBottom_toBottomOf="@id/settings_icon"
+                app:layout_constraintStart_toEndOf="@id/settings_icon"
+                android:text="Sozlamalar"
+                android:clickable="true"
+                android:focusable="true"
+                android:textSize="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:id="@+id/contact_us_icon"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/ic_baseline_headset_mic_24"
+                app:layout_constraintTop_toBottomOf="@id/settings_icon"
+                android:layout_marginTop="@dimen/_15sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:clickable="true"
+                android:focusable="true"
+                app:tint="@color/green" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/contact_us_icon"
+                app:layout_constraintBottom_toBottomOf="@id/contact_us_icon"
+                app:layout_constraintStart_toEndOf="@id/contact_us_icon"
+                android:text="Qo`llab-quvvatlash"
+                android:clickable="true"
+                android:focusable="true"
+                android:textSize="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:textColor="@color/black"/>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

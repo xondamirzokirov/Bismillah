@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="@dimen/_140sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_margin="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:cardElevation="@dimen/_5sdp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_3sdp"
+            >
+
+
+
+            <ImageView
+                android:id="@+id/product_img"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:src="@drawable/tshirt"
+                android:scaleType="centerCrop"
+                app:layout_constraintVertical_bias="0.02"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/favorite_border"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/ic_baseline_favorite_border_24" />
+
+
+            <ImageView
+                android:id="@+id/favorite"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:clickable="true"
+                android:focusable="true"
+                android:visibility="invisible"
+                android:src="@drawable/ic_baseline_favorite_244" />
+
+
+            <TextView
+                android:id="@+id/product_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:text="shoes djc iwp gkje "
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp"
+
+                app:layout_constraintTop_toBottomOf="@id/product_img"/>
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="45000"
+                app:layout_constraintBottom_toBottomOf="@id/mtrl_plus"
+                app:layout_constraintTop_toTopOf="@id/mtrl_plus"
+                app:layout_constraintStart_toStartOf="parent"
+                android:textSize="@dimen/_16ssp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/mtrl_plus"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/plus"
+                    android:background="@color/green"
+                    app:tint="@color/white"
+                    android:padding="@dimen/_4sdp"/>
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <TextView
+                android:id="@+id/txt_amount"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_constraintEnd_toStartOf="@id/mtrl_plus"
+                android:text="1"
+                android:visibility="invisible"
+                app:layout_constraintTop_toTopOf="@id/mtrl_plus"
+                app:layout_constraintBottom_toBottomOf="@id/mtrl_plus"
+                android:gravity="center"
+                android:textSize="@dimen/_14ssp"
+                android:textColor="@color/black"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/mtrl_minus"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                app:layout_constraintEnd_toStartOf="@id/txt_amount"
+                app:layout_constraintTop_toTopOf="@id/txt_amount"
+                android:clickable="true"
+                android:focusable="true"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@id/txt_amount"
+              >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/green"
+                    android:padding="@dimen/_3sdp"
+                    android:src="@drawable/ic_baseline_remove_24"
+                    app:tint="@color/white" />
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
