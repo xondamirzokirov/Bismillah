@@ -11,7 +11,7 @@
        android:text="Barchasini korsatish"
        app:layout_constraintTop_toTopOf="parent"
        app:layout_constraintEnd_toEndOf="parent"
-       android:textSize="@dimen/_15ssp"
+       android:textSize="@dimen/_13ssp"
        android:layout_marginEnd="@dimen/_5sdp"
        android:layout_marginTop="@dimen/_15sdp"
        android:textColor="@color/green"/>
