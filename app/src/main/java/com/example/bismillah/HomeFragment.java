@@ -15,7 +15,7 @@ import android.widget.TextView;
 public class HomeFragment extends Fragment {
 
    RecyclerView recyclerView3;
-   TextView seall;
+
 
     public HomeFragment() {
         // Required empty public constructor
@@ -34,7 +34,7 @@ public class HomeFragment extends Fragment {
         recycler_3_adapter recycler3Adapter = new recycler_3_adapter(getContext());
         recyclerView.setAdapter(adapter);
         recyclerView3.setAdapter(recycler3Adapter);
-        seall = view.findViewById(R.id.see_all_cat);
+
 
 
 
